@@ -9,7 +9,9 @@
 <body>
     <div id="app">
         <p>{{ message }}</p>
+        <img :src="url" alt="random"><br>
         <input type="text" v-model="message">
+        <input type="button" v-model="message" @click="change">
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="main.js"></script>
